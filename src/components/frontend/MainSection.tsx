@@ -1,11 +1,9 @@
 import { useState } from "react";
 import CreateTweet from "./CreateTweet";
 import Tweet from "./Tweet";
-import { tempData } from "../../tempData"
 
 const MainSection = () => {
   const [selectedTab, setSelectedTab] = useState("foryou");
-  console.log("testing data", tempData)
 
   return (
     <>

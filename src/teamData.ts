@@ -1,0 +1,141 @@
+interface TempData {
+    authorAddress: string;
+    authorName: string;
+    bookmarks: string[]; 
+    likedBy: string[]; 
+    quotedTweetIndex: number | null;
+    quotes: any[];
+    repliedTweetIndex: number | null;
+    replies: any[];
+    retweets: any[];
+    timestamp: number;
+    tweetIndex: number;
+    tweetMsg: string; 
+    tweetType: number;
+  }
+  
+  // Sample static array of tweets
+  export const tempData: TempData[] = [
+    {
+      authorAddress: "0xd98283F591150291e92e46a997dda3090a982A44",
+      authorName: "Alice",
+      bookmarks: [],
+      likedBy: ["0x8376bce4e61A69AFC3ca9d20Bc8e2F3bF8578A66"],
+      quotedTweetIndex: 0,
+      quotes: [],
+      repliedTweetIndex: null,
+      replies: [],
+      retweets: [],
+      timestamp: 1715285160, // Example timestamp
+      tweetIndex: 0,
+      tweetMsg: "Hello world!",
+      tweetType: 0,
+    },
+    {
+        authorAddress: "0x910373992d054eF318081c111cF4C87B44aBa869",
+        authorName: "Bob",
+        bookmarks: [""],
+        likedBy: [""],
+        quotedTweetIndex: 0,
+        quotes: [],
+        repliedTweetIndex: null,
+        replies: [],
+        retweets: [],
+        timestamp: 1715285292, // Example timestamp
+        tweetIndex: 1,
+        tweetMsg: "Good morning!",
+        tweetType: 0,
+      },
+      {
+        authorAddress: "0xB3D8A59458CB5208FFbA574281A9aD98054361E9",
+        authorName: "Carol",
+        bookmarks: ["0xB3D8A59458CB5208FFbA574281A9aD98054361E9"],
+        likedBy: ["0x8376bce4e61A69AFC3ca9d20Bc8e2F3bF8578A66"],
+        quotedTweetIndex: null,
+        quotes: [],
+        repliedTweetIndex: 0,
+        replies: [4],
+        retweets: [],
+        timestamp: 1715331336, // Example timestamp
+        tweetIndex: 2,
+        tweetMsg: "Just finished my morning coffee!",
+        tweetType: 0,
+      },
+      {
+        authorAddress: "0x8376bce4e61A69AFC3ca9d20Bc8e2F3bF8578A66",
+        authorName: "d",
+        bookmarks: [],
+        likedBy: ["0xb7a343DA2fef3d43Aa1769B9fd9a51CB169c2f44"],
+        quotedTweetIndex: null,
+        quotes: [],
+        repliedTweetIndex: 0,
+        replies: [],
+        retweets: [],
+        timestamp: 1715331420, // Example timestamp
+        tweetIndex: 3,
+        tweetMsg: "Just finished my morning coffee!",
+        tweetType: 0,
+      },
+      {
+        authorAddress: "0x8376bce4e61A69AFC3ca9d20Bc8e2F3bF8578A66",
+        authorName: "e",
+        bookmarks: [],
+        likedBy: [],
+        quotedTweetIndex: 2,
+        quotes: [],
+        repliedTweetIndex: 2,
+        replies: [],
+        retweets: [],
+        timestamp: 1715331552, // Example timestamp
+        tweetIndex: 4,
+        tweetMsg: "Just finished my morning coffee!",
+        tweetType: 1,
+      },
+      {
+        authorAddress: "0xb7a343DA2fef3d43Aa1769B9fd9a51CB169c2f44",
+        authorName: "f",
+        bookmarks: [],
+        likedBy: ["0xB3D8A59458CB5208FFbA574281A9aD98054361E9"],
+        quotedTweetIndex: null,
+        quotes: [6],
+        repliedTweetIndex: 0,
+        replies: [],
+        retweets: [],
+        timestamp: 1715331612, // Example timestamp
+        tweetIndex: 5,
+        tweetMsg: "Just finished my morning coffee!",
+        tweetType: 0,
+      },
+      {
+        authorAddress: "0xB3D8A59458CB5208FFbA574281A9aD98054361E9",
+        authorName: "g",
+        bookmarks: [],
+        likedBy: [],
+        quotedTweetIndex: 5,
+        quotes: [],
+        repliedTweetIndex: 0,
+        replies: [],
+        retweets: [],
+        timestamp: 1715331948, // Example timestamp
+        tweetIndex: 6,
+        tweetMsg: "Just finished my morning coffee!",
+        tweetType: 3,
+      },
+      {
+        authorAddress: "0xbaB6564a10Cf1A3f501C4Ca220956f2c8BFbb5a9",
+        authorName: "h",
+        bookmarks: [],
+        likedBy: [],
+        quotedTweetIndex: null,
+        quotes: [],
+        repliedTweetIndex: 0,
+        replies: [],
+        retweets: [],
+        timestamp: 1715333340
+        ,
+        tweetIndex: 7,
+        tweetMsg: "Just finished my morning coffee!",
+        tweetType: 0,
+      },
+  ];
+  
