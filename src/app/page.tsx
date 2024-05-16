@@ -5,6 +5,8 @@ import Image from "next/image";
 import { useState } from "react";
 import LeftSidebar from "../components/frontend/LeftSidebar";
 import CreateTweet from "../components/frontend/CreateTweet";
+import WhoToFollow from "../components/frontend/WhoToFollow";
+import Tweet from "../components/frontend/Tweet";
 
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState("foryou");
@@ -35,7 +37,12 @@ export default function Home() {
           </button>
         </div>
         <CreateTweet /> 
+        <Tweet />
+        <Tweet />
+        <Tweet />
+        <Tweet />
       </div>
+      <WhoToFollow/>  
     </div>
   );
 }
