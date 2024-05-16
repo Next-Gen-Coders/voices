@@ -4,6 +4,7 @@ import { WelcomeToLens } from "@/components/WelcomeToLens";
 import Image from "next/image";
 import { useState } from "react";
 import LeftSidebar from "../components/frontend/LeftSidebar";
+import CreateTweet from "../components/frontend/CreateTweet";
 
 export default function Home() {
   const [selectedTab, setSelectedTab] = useState("foryou");
@@ -33,6 +34,7 @@ export default function Home() {
             Following
           </button>
         </div>
+        <CreateTweet /> 
       </div>
     </div>
   );
