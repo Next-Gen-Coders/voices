@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CreateTweet from "./CreateTweet";
-import Tweet from "./Tweet";
+import Tweet from "./Features/Tweet";
 
 const MainSection = () => {
   const [selectedTab, setSelectedTab] = useState("foryou");

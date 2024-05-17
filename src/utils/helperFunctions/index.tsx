@@ -44,11 +44,23 @@ interface GenerateAvatarProps {
   userAddress: string;
   size: number;
 }
-export const GenerateAvatar: React.FC<GenerateAvatarProps> = ({
-  userAddress,
-  size,
-}) => {
-  const svgData = avatar(userAddress, { size });
+export const GenerateAvatar: React.FC<GenerateAvatarProps> = ({ userAddress, size }) => {
+  // Add a check to see if userAddress is undefined
+  if (!userAddress) {
+    console.error('userAddress is undefined');
+    return null;
+  }
+
+  // Use try-catch to handle any errors that may occur within the avatar function
+  let svgData;
+  try {
+    svgData = avatar(userAddress, { size });
+  } catch (error) {
+    console.error('Error generating avatar:', error);
+    return null;
+  }
+
+  // Render the avatar
   return <div id="avatar" dangerouslySetInnerHTML={{ __html: svgData }}></div>;
 };
 
