@@ -1,21 +1,7 @@
-interface TempData {
-    authorAddress: string;
-    authorName: string;
-    bookmarks: string[]; 
-    likedBy: string[]; 
-    quotedTweetIndex: number | null;
-    quotes: any[];
-    repliedTweetIndex: number | null;
-    replies: any[];
-    retweets: any[];
-    timestamp: number;
-    tweetIndex: number;
-    tweetMsg: string; 
-    tweetType: number;
-  }
-  
+import { TweetData } from "./utils/types";
+
   // Sample static array of tweets
-  export const tempData: TempData[] = [
+  export const tempData: TweetData[] = [
     {
       authorAddress: "0xd98283F591150291e92e46a997dda3090a982A44",
       authorName: "Alice",
@@ -23,7 +9,7 @@ interface TempData {
       likedBy: ["0x8376bce4e61A69AFC3ca9d20Bc8e2F3bF8578A66"],
       quotedTweetIndex: 0,
       quotes: [],
-      repliedTweetIndex: null,
+      repliedTweetIndex: 0,
       replies: [],
       retweets: [],
       timestamp: 1715285160, // Example timestamp
@@ -34,11 +20,11 @@ interface TempData {
     {
         authorAddress: "0x910373992d054eF318081c111cF4C87B44aBa869",
         authorName: "Bob",
-        bookmarks: [""],
-        likedBy: [""],
+        bookmarks: [],
+        likedBy: [],
         quotedTweetIndex: 0,
         quotes: [],
-        repliedTweetIndex: null,
+        repliedTweetIndex: 0,
         replies: [],
         retweets: [],
         timestamp: 1715285292, // Example timestamp
@@ -51,7 +37,7 @@ interface TempData {
         authorName: "Carol",
         bookmarks: ["0xB3D8A59458CB5208FFbA574281A9aD98054361E9"],
         likedBy: ["0x8376bce4e61A69AFC3ca9d20Bc8e2F3bF8578A66"],
-        quotedTweetIndex: null,
+        quotedTweetIndex: 0,
         quotes: [],
         repliedTweetIndex: 0,
         replies: [4],
@@ -66,7 +52,7 @@ interface TempData {
         authorName: "d",
         bookmarks: [],
         likedBy: ["0xb7a343DA2fef3d43Aa1769B9fd9a51CB169c2f44"],
-        quotedTweetIndex: null,
+        quotedTweetIndex: 0,
         quotes: [],
         repliedTweetIndex: 0,
         replies: [],
@@ -96,7 +82,7 @@ interface TempData {
         authorName: "f",
         bookmarks: [],
         likedBy: ["0xB3D8A59458CB5208FFbA574281A9aD98054361E9"],
-        quotedTweetIndex: null,
+        quotedTweetIndex: 0,
         quotes: [6],
         repliedTweetIndex: 0,
         replies: [],
@@ -126,7 +112,7 @@ interface TempData {
         authorName: "h",
         bookmarks: [],
         likedBy: [],
-        quotedTweetIndex: null,
+        quotedTweetIndex: 0,
         quotes: [],
         repliedTweetIndex: 0,
         replies: [],

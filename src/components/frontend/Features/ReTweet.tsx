@@ -11,8 +11,9 @@ import {
   UserDetailsDefaultValues,
   UserDetailsType,
 } from "../../../utils/types";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import repostIcon from "../../../assets/tweet/repost.svg";
+import Image from "next/image";
 
 const ReTweet = ({ originalTweet, retweetedBy }: RetweetType) => {
 
@@ -27,7 +28,7 @@ const ReTweet = ({ originalTweet, retweetedBy }: RetweetType) => {
   return (
     <>
       <div className="flex gap-1 m-1">
-        <img src={repostIcon} className="h-4" />
+        <Image src={repostIcon} alt="reposted" className="h-4" />
         <p className="text-sm flex justify-center items-center gap-2 text-neutral-400 font-semibold">
           {userDetails.userName !== "" && (
             <>

@@ -24,6 +24,7 @@ import {
 import ReTweet from "./ReTweet";
 import Quote from "./Quote";
 import Reply from "./Reply";
+import Image from "next/image";
 
 const Tweet = ({
   authorAddress,
@@ -115,7 +116,7 @@ const Tweet = ({
           onClick={() => handleLike()}
           className="flex items-center gap-1 text-sm"
         >
-          <img
+          <Image
             src={userEngagement.isLiked ? likePink : like}
             alt="like"
             className="h-6 w-6"
@@ -125,7 +126,7 @@ const Tweet = ({
           </p>
         </div>
         <div className="flex items-center gap-1 text-sm">
-          <img
+          <Image
             src={comment}
             alt="comment"
             className="h-6 w-6"
@@ -133,15 +134,15 @@ const Tweet = ({
           <p>{replies && replies.length}</p>
         </div>
         <div className="flex items-center gap-1 text-sm">
-          <img src={repost} alt="repost" className="h-6 w-6" />
+          <Image src={repost} alt="repost" className="h-6 w-6" />
           <p className={userEngagement.isRetweeted ? "text-[#00b679]" : ""}>
             {quotes?.length + retweets?.length}
           </p>
         </div>
 
-        <img src={share} alt="share" className="h-6 w-6" />
+        <Image src={share} alt="share" className="h-6 w-6" />
         <div className="flex items-center gap-1 text-sm">
-          <img
+          <Image
             src={userEngagement.isBookMarked ? bookmarkFilled : bookmark}
             alt="bookmark"
             className="h-5 w-5"
