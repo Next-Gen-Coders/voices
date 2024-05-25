@@ -17,10 +17,11 @@ const Tweets = ({ tweetData, tweetIndices }: TweetsProp) => {
         <>
           <div className="divide-y-2 divide-opacity-80 divide-neutral-700">
             {tweetsArray
-              .map((tweet) => {
+              .map((tweet, index) => {
                 return (
-                  <>
+                  <div key={index}>
                     <Tweet
+                    key={index}
                       authorAddress={tweet.authorAddress}
                       authorName={tweet.authorName}
                       timestamp={tweet.timestamp}
@@ -35,7 +36,7 @@ const Tweets = ({ tweetData, tweetIndices }: TweetsProp) => {
                       bookmarks={tweet.bookmarks}
                       repliedTweetIndex={tweet.repliedTweetIndex}
                     />
-                  </>
+                  </div>
                 );
               })
               .reverse()}

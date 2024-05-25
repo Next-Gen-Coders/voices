@@ -1,3 +1,4 @@
+"use client"
 import { GenerateAvatar, truncateAddress } from "../../utils/helperFunctions";
 
 

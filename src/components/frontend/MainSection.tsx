@@ -1,3 +1,4 @@
+"use client"
 import { useState } from "react";
 import CreateTweet from "./CreateTweet";
 import Tweets from "./Tweets";

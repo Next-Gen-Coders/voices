@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react'
 import magnify from "../../assets/navbar/magnify.svg"
 import Image from 'next/image';

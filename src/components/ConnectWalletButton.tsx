@@ -1,3 +1,4 @@
+"use client"
 import { ConnectKitButton } from "connectkit";
 import { Button } from "./Button";
 

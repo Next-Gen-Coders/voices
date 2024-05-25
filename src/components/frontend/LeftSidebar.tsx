@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from "react";
 import logo from "../../assets/navbar/logo.svg";
 import home from "../../assets/navbar/home.svg";
@@ -34,7 +35,7 @@ const LeftSidebar = () => {
       <div className="h-screen flex flex-col justify-between">
         <div>
           <a href="/" className="p-2 block my-4 text-xl text-center font-semibold">
-            <Image src={logo} alt="Logo" width={40} height={40} />
+            <Image src={logo} className="mx-auto" alt="Logo" width={40} height={40} />
           </a>
 
           <div className="flex flex-col gap-2">

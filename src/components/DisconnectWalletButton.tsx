@@ -1,3 +1,4 @@
+"use client"
 import { useAccount, useDisconnect } from "wagmi";
 import { ButtonAlt } from "./Button";
 

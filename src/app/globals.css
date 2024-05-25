@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.scrollbar::-webkit-scrollbar-track
+{
+  visibility: hidden;
+}
+.scrollbar::-webkit-scrollbar
+{
+	width: 0px;
+	visibility: hidden;
+}
+.scrollbar::-webkit-scrollbar-thumb
+{
+	visibility: hidden;
+}

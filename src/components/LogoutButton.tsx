@@ -1,3 +1,4 @@
+"use client"
 import { useLogout } from "@lens-protocol/react-web";
 import { useAccount, useDisconnect } from "wagmi";
 import { Button } from "./Button";
