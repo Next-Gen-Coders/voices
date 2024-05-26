@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState } from "react";
 import { TweetData, TweetDataDefaultValue } from "../../utils/types";
 import Tweet from "./Features/Tweet";
